@@ -1,6 +1,6 @@
 name: woke
 on:
-  - pull_request
+  - push
 jobs:
   woke:
     name: woke
