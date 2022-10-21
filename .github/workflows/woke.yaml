@@ -15,16 +15,3 @@ jobs:
           # Cause the check to fail on any broke rules
           fail-on-error: false
           woke-args: --config https://via.vmw.com/its-woke-rules
-  woke-aws:
-    name: woke-aws
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: woke
-        uses: get-woke/woke-action@v0
-        with:
-          # Cause the check to fail on any broke rules
-          fail-on-error: false
-          woke-args: --config https://vmw-its-woke-client-rules-resources-prod.s3.us-west-2.amazonaws.com/public/its-woke-rules.yaml
